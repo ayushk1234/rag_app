@@ -35,7 +35,8 @@ Ensure you have the project files in a local directory.
 
 **Windows:**
 ```powershell
-python -m venv venv```
+python -m venv venv
+```
 
 Activate the venv
 ```
@@ -44,7 +45,9 @@ Activate the venv
 
 **Linux/macOS:**
 ```bash
-python3 -m venv venv```
+python3 -m venv venv
+```
+
 Activate the venv
 ```
 source venv/bin/activate
