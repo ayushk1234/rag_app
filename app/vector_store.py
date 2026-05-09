@@ -1,4 +1,3 @@
-import os
 import chromadb
 from fastembed import TextEmbedding
 
@@ -10,11 +9,7 @@ embedding_model = TextEmbedding(
 )
 
 # Initialize ChromaDB client
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# print("BASE_DIR: ",os.path.dirname(os.path.abspath(__file__)))
-CHROMA_PATH = os.path.join(BASE_DIR, "chroma_db")
-
-client = chromadb.PersistentClient(path=CHROMA_PATH)
+client = chromadb.Client()
 
 # gets an existing collection or create a new one if it doesn't exist
 collection = client.get_or_create_collection(
