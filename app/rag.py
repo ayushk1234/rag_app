@@ -82,7 +82,12 @@ def ask_question(query):
 
     answer = response.choices[0].message.content
 
+    # If the LLM says it couldn't find the info, don't show citations
+    if "I could not find this information in the uploaded documents" in answer:
+        citations = []
+
     return {
         "answer": answer,
         "citations": list(set(citations))
     }
+
