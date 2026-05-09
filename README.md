@@ -35,13 +35,18 @@ Ensure you have the project files in a local directory.
 
 **Windows:**
 ```powershell
-python -m venv venv
+python -m venv venv```
+
+Activate the venv
+```
 .\venv\Scripts\activate
 ```
 
 **Linux/macOS:**
 ```bash
-python3 -m venv venv
+python3 -m venv venv```
+Activate the venv
+```
 source venv/bin/activate
 ```
 
@@ -58,8 +63,8 @@ OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ## How to Start the Project
-Run the following command to launch the Streamlit application:
-```powershell
+After activating the virtual env , i`cd into the rag_app` folder run the following command to launch the Streamlit application in terminal:
+```
 streamlit run streamlit_app.py
 ```
 
