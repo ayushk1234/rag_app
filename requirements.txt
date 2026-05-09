@@ -1,0 +1,7 @@
+streamlit
+uvicorn
+openai
+chromadb
+fastembed
+pymupdf
+python-dotenv
