@@ -76,7 +76,6 @@ with st.sidebar:
                 for uploaded_file in uploaded_files:
 
                     # Saving file
-                    print("uploaded file",uploaded_file.name)
                     save_path = os.path.abspath(os.path.join(
                         UPLOAD_DIR,
                         uploaded_file.name
@@ -120,12 +119,13 @@ else:
             st.markdown(message["content"])
 
             # Display citations if assistant message
-            if (message["role"] == "assistant"and "citations" in message):
+            if (message["role"] == "assistant" and message.get("citations")):
 
                 st.markdown("### Sources")
 
                 for citation in message["citations"]:
                     st.markdown(f"- {citation}")
+
 
 
     # Chat input
@@ -158,10 +158,11 @@ else:
 
                 st.markdown(answer)
 
-                st.markdown("### Sources")
+                if citations:
+                    st.markdown("### Sources")
+                    for citation in citations:
+                        st.markdown(f"- {citation}")
 
-                for citation in citations:
-                    st.markdown(f"- {citation}")
 
         # Save assistant response
         st.session_state.messages.append({
