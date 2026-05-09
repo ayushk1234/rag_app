@@ -17,7 +17,6 @@ rag_app/
 │   ├── vector_store.py  # Embedding and database management
 │   └── prompts.py       # System prompts
 ├── data/uploads/        # Temporary storage for uploaded PDFs
-├── chroma_db/           # Persistent vector database
 ├── streamlit_app.py     # Main application entry point
 ├── .env                 # API keys (not included)
 └── requirements.txt     # Project dependencies
@@ -74,7 +73,7 @@ streamlit run streamlit_app.py
 Now navigate to the URL provided in your terminal (default `http://localhost:8501`) to start app.
 
 ## Future Scope
-- Add a feature to delete documents.
+- Embeddings with persistent storage.
 - Having conversation history with the chatbot so that user can ask follow up questions .
 - Adding chat and session history for the chatbot for next chat session.
 - Not saving the files after processing. Instead upload and process on the go.
