@@ -66,7 +66,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ## How to Start the Project
-After activating the virtual env , i`cd into the rag_app` folder run the following command to launch the Streamlit application in terminal:
+After activating the virtual env , `cd into the rag_app` folder run the following command to launch the Streamlit application in terminal:
 ```
 streamlit run streamlit_app.py
 ```
