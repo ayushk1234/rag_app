@@ -75,7 +75,7 @@ Now navigate to the URL provided in your terminal (default `http://localhost:850
 ## Future Scope
 - Embeddings with persistent storage.
 - Having conversation history with the chatbot so that user can ask follow up questions .
-- Lnagchain integration.
+- Langchain integration.
 - Adding chat and session history for the chatbot for next chat session.
 - Not saving the files after processing. Instead upload and process on the go.
 - Clickable citations in the chatbot response that will take user to the exact page in the document.
